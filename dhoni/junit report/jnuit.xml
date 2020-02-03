@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="1.089624">
+<testcase classname="To login into adactin hotel app and book room" name="Verify the user login funtionality with invalid crendentails" time="1.089624">
+<failure message="java.lang.Exception: Not a Valid Url&#13;&#10;&#9;at cucum.FunctionalLibrary.website(FunctionalLibrary.java:59)&#13;&#10;&#9;at cucum.stepdefenetion.user_launch_the_adactin_application(stepdefenetion.java:13)&#13;&#10;&#9;at ✽.Given User launch the adactin application(D:/eclipse dir/dhoni/feature file/Adactin.feature:5)&#13;&#10;"><![CDATA[Given User launch the adactin application...................................failed
+Then User enter the username in the login module............................skipped
+And User enter the password in the login module.............................skipped
+And User click on the login button..........................................skipped
+Then User verify the alert message displays for invalid crendentails........skipped
+
+StackTrace:
+java.lang.Exception: Not a Valid Url
+	at cucum.FunctionalLibrary.website(FunctionalLibrary.java:59)
+	at cucum.stepdefenetion.user_launch_the_adactin_application(stepdefenetion.java:13)
+	at ✽.Given User launch the adactin application(D:/eclipse dir/dhoni/feature file/Adactin.feature:5)
+]]></failure>
+</testcase>
+</testsuite>

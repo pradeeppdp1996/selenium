@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="43.799491">
+<testcase classname="Facebook web application smoke test cases" name="Verify the user login funtionality with invalid crendentails" time="40.347282">
+<system-out><![CDATA[Given User launch the facebook application..................................passed
+Then User verify the facebook logo is displayed in the header...............passed
+And User enter the emailid in the login module..............................passed
+And User enter the password in the login module.............................passed
+And User click on the login button..........................................passed
+Then User verify the alert message displays for invalid crendentails........passed
+]]></system-out>
+</testcase>
+<testcase classname="Facebook web application smoke test cases" name="Verify the forget password functionality" time="3.452209">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[Find Your Account]&gt; but was:&lt;[Reset Your Password]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at cucum.stepdefenetion.user_verify_the_in_the_page_header(stepdefenetion.java:69)&#13;&#10;&#9;at ✽.Then User verify the &quot;Find Your Account&quot; in the page header(adacin.feature:16)&#13;&#10;"><![CDATA[Given User click on the facebook logo.......................................passed
+When User click on the forget password link.................................passed
+Then User verify the "Find Your Account" in the page header.................failed
+When User enter the identify email id in the find the account module........skipped
+And User click on the submit button.........................................skipped
+Then User verify the "Enter Security Code" in the pagge header..............skipped
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Find Your Account]> but was:<[Reset Your Password]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at cucum.stepdefenetion.user_verify_the_in_the_page_header(stepdefenetion.java:69)
+	at ✽.Then User verify the "Find Your Account" in the page header(adacin.feature:16)
+]]></failure>
+</testcase>
+</testsuite>
